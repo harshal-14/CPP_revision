@@ -1,2 +1,44 @@
-# C-_revision
-This repository is meant to be a practice for C++ topics.
+# CPP_revision
+This repository is meant to be a practice for C++ topics for the Zoox interview. It contains code for these topics.
+##Topics
+- Classes and objects- 03/07
+- Access modifiers in C++ - 03/07
+  - Public
+  - Private
+  - Protected
+- Constructor - 03/07
+  - Default
+  - Parametrized
+  - Copy
+- Static keyword - 03/07
+- This keyword 03/07
+- New Keyword
+- Const keyword
+- Final keyword
+- Explicit keyword
+- Inheritance
+    - Single
+    - Multiple
+    - Multilevel
+    - Heirarchial
+    - Hybrid
+- Polymorphism
+    - Compile time
+        - Function overloading
+        - Operator overloading
+    - Run time
+- Encapsulation
+- Data Abstraction
+    - OOPs Design Principles
+      - DRY
+      - KISS
+      - YAGNI
+   - Cohesion & coupling
+   - CQS
+   - SOLID
+- OOPS Design Pattern
+    - Factory Method
+    - SINGLETON Method
+    - Bu8ilder Method
+    - Observer Method
+    - Abstract Method
