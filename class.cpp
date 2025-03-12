@@ -15,13 +15,15 @@ class Human {
         void eat(){
             std::cout << "He is eating" << std::endl;
         }
-}
+};
 
 int main(){
     Human chitti;
-    citti.age = 20;
+    chitti.age = 20;
     chitti.weight = 50;
 
     chitti.sleep();
     chitti.eat();
-}
+
+    return 0;
+};
