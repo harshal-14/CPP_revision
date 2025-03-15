@@ -1,3 +1,5 @@
+/* ptr problems*/
+
 struct LanePoint {
     double x, y;
 };
@@ -11,16 +13,16 @@ private:
 public:
     LaneDetector(int count) {
         pointCount = count;
-        leftLane = new LanePoint[pointCount];
+        leftLane = new LanePoint[pointCount]; 
         rightLane = new LanePoint[pointCount];
     }
     
     LanePoint* getLeftLane() {
-        return leftLane;
+        return leftLane; // dangling ptr issue if not handled properly
     }
     
     LanePoint* getRightLane() {
-        return rightLane;
+        return rightLane; // dangling ptr issue if not handled properly
     }
     
     void processImage(const unsigned char* imageData) {
@@ -35,7 +37,11 @@ public:
     }
     
     ~LaneDetector() {
-        delete leftLane;
-        delete rightLane;
+        delete leftLane; //issue here delete[] should be used as leftLane is an array
+        delete rightLane; // same here
     }
 };
+
+/* 
+solution could be instread of raw pointers use vector for safe getters and copy constructor to create deep copy with assignment operators 
+*/
